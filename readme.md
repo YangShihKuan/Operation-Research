@@ -60,9 +60,9 @@ z = 21
 Please try to formulate the problem into a (Mixed) Integer Programming problem, and write the model in a document and save as pdf. Once the problem is formed, please use Gurobi to solve the problem.
 
 ## Homework6
-1. Homework6-1 (40%)  
+### Homework6-1 (40%)  
 Please solve for a TSP.
-2. Homework6-2 (60%)
+### Homework6-2 (60%)
 Please form this problem and solve it with Python using Gurobi, and describe your model in pdf and also provide the .py file
 
 
