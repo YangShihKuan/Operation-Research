@@ -18,7 +18,7 @@ Script Files for:
 ### Homework 3-2
 Please write a Python script called factori.py such that the Factorial is calculated based on a loop structure, where N is given by the user.
 
-###Homework 3-3
+### Homework 3-3
 For the following problem, please solve it by using the simplex method by hand. Please also indicate geometric properties you have observed when working on this problem.  
 max z = 2*x1 + x2  
 s.t.  
