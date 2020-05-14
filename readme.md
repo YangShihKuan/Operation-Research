@@ -1,4 +1,6 @@
 **作業研究-授課教授陳柏華**
+Learn to systematically analyze the problem of concern, formulate the problem into mathematical models, and find the optimal solution using available techniques and software packages. 
+
 
 ## Homework2
 
