@@ -29,15 +29,17 @@ def knapsackDP(C,W,V):
             ####
             solution = []
             for m in range(int(C/W[stage])+1):
+                #print 'sol',solution
                 if stage == stage_order[0]:
                     if x-W[stage]*m < 0:
                         solution.append(0)
                     else:
-                        solution.append(V[stage]*m)
+                        solution.append(round(V[stage]*m,2))
                 elif x-W[stage]*m < 0:
                     solution.append(0)
+                    
                 else:
-                    solution.append(V[stage]*m + opt_value[stage+1][x-W[stage]*m])
+                    solution.append(round(V[stage]*m + opt_value[stage+1][x-W[stage]*m],2))
         
             max_opt = max(solution)
             max_m = solution.index(max_opt)
@@ -60,13 +62,13 @@ def knapsackDP(C,W,V):
         else:
             current_m = opt_value[h].index(remaining_value)
             result.append(opt_m[h][current_m])
-            remaining_value = remaining_value - V[h]*opt_m[h][current_m]
+            remaining_value = round(remaining_value - V[h]*opt_m[h][current_m],2)
             
     opt_value = numpy.array(opt_value)
     opt_m = numpy.array(opt_m)
-    print
-    print '''Optimal Value:\n''',opt_value
-    print
-    print '''Optimal M:\n''',opt_m
+    #print
+    #print '''Optimal Value:\n''',opt_value
+    #print
+    #print '''Optimal M:\n''',opt_m
     return KnapsackDPResult(optf, result)    
              
